@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Designer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <h1>Meme</h1>
+      <h1>Designer</h1>
+    </div>
+    <form action="">
+      <div id="urlinputcontainer">
+        <input type="url" placeholder="Image URL" id="pictureurl" required />
+        <i id="randombutton" class="fas fa-dice"></i>
+      </div>
+      <input
+        type="text"
+        placeholder="Top Line Text"
+        id="toplinetext"
+        required
+      />
+      <input
+        type="text"
+        placeholder="Bottom Line Text"
+        id="bottomlinetext"
+        required
+      />
+      <button type="submit" id="submit">Create Meme</button>
+    </form>
+    <div id="memecontainer"></div>
+    <div id="buttons">
+      <button id="savebutton" class="hidden">Keep</button>
+      <button id="discardbutton" class="hidden">Discard</button>
+    </div>
+    <div id="storedmemecontainer"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
